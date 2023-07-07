@@ -33,4 +33,15 @@ public class FizzBuzzTest {
         //assert
         assertEquals("FizzBuzz",result);
     }
+
+    @Test
+    void shouldReturnTheSameNumberInStringFormatIfNeitherDivisibleBy3nor5() {
+
+        final FizzBuzz fizzBuzz = new FizzBuzz();
+
+        final String result = fizzBuzz.convert(16);
+
+        assertEquals("16",result);
+    }
+
 }

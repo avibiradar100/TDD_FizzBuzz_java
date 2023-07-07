@@ -1,10 +1,20 @@
 public class FizzBuzz {
     public String convert(int number){
 
-        if(number%3==0 && number%5 !=0)
+        if(isNumberDivisibleBy3(number) && isNumberDivisibleBy5(number))
+            return "FizzBuzz";
+        if(isNumberDivisibleBy3(number))
             return "Fizz";
-        if(number%5==0 && number%3!=0)
+        if(isNumberDivisibleBy5(number))
             return "Buzz";
-        return "FizzBuzz";
+        return Integer.toString(number);
+    }
+
+    private static boolean isNumberDivisibleBy3(int number) {
+        return number % 3 == 0;
+    }
+
+    private static boolean isNumberDivisibleBy5(int number) {
+        return number % 5 == 0;
     }
 }
