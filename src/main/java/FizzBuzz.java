@@ -3,6 +3,8 @@ public class FizzBuzz {
 
         if(i%3==0 && i%5 !=0)
             return "Fizz";
-        return null;
+        if(i%5==0 && i%3!=0)
+            return "Buzz";
+        return "FizzBuzz";
     }
 }
