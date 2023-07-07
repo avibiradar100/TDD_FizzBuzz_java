@@ -8,7 +8,7 @@ public class FizzBuzzTest {
         //arrange
         final FizzBuzz fizzBuzz = new FizzBuzz();
         //act
-        final String result = fizzBuzz.print(6);
+        final String result = fizzBuzz.convert(6);
         //assert
         assertEquals("Fizz",result);
 
@@ -19,7 +19,7 @@ public class FizzBuzzTest {
         //arrange
         final FizzBuzz fizzBuzz = new FizzBuzz();
         //act
-        final String result = fizzBuzz.print(10);
+        final String result = fizzBuzz.convert(10);
         //assert
         assertEquals("Buzz",result);
     }
@@ -29,7 +29,7 @@ public class FizzBuzzTest {
         //arrange
         final FizzBuzz fizzBuzz = new FizzBuzz();
         //act
-        final String result = fizzBuzz.print(15);
+        final String result = fizzBuzz.convert(15);
         //assert
         assertEquals("FizzBuzz",result);
     }
